@@ -21,19 +21,7 @@ def gerar_df_phoenix(vw_name, base_luck):
     conexao = mysql.connector.connect(**config)
     cursor = conexao.cursor()
 
-    if base_luck=='test_phoenix_maceio':
-
-        if vw_name=='vw_router':
-
-            request_name = f'SELECT * FROM {vw_name} WHERE {vw_name}.`Data Execucao`>={data_hoje_str}'
-
-        elif vw_name=='vw_payment_guide':
-
-            request_name = f"SELECT 'Tipo de Servico', 'Reserva', 'Escala' FROM {vw_name}"
-
-    else:
-
-        request_name = f'SELECT * FROM {vw_name} WHERE {vw_name}.`Data Execucao`>={data_hoje_str}'
+    request_name = f'SELECT * FROM {vw_name} WHERE {vw_name}.`Data Execucao`>={data_hoje_str}'
 
     # Script MySql para requests
     cursor.execute(
