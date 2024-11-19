@@ -57,7 +57,7 @@ hoje = date.today()
 
 base_luck = 'test_phoenix_joao_pessoa'
 
-lista_colunas_df = ['Data Execucao', 'Escala', 'Reserva', 'Veiculo', 'Motorista', 'Guia', 'Servico']
+lista_colunas_df = ['Data Execucao', 'Data da Escala', 'Escala', 'Reserva', 'Veiculo', 'Motorista', 'Guia', 'Servico']
 
 st.set_page_config(layout='wide')
 
