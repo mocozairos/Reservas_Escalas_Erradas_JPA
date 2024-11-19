@@ -62,7 +62,6 @@ lista_colunas_df = ['Data Execucao', 'Data da Escala', 'Escala', 'Reserva', 'Vei
 st.set_page_config(layout='wide')
 
 st.title('Reservas em Escalas Erradas - João Pessoa')
-st.title('Reservas em Escalas Erradas - João Pessoa')
 
 st.divider()
 
